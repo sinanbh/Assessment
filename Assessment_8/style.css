@@ -1,0 +1,129 @@
+body
+{
+    background-color: yellowgreen;
+}
+h2
+{
+    text-align: center;
+}
+.flex
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.box
+{
+    width: 5rem;
+    height: 5rem;
+}
+.box1, .box2, .box3
+{
+    background-color: rgb(5, 107, 155);
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    animation: row1 4s linear 0s infinite alternate;
+}
+.box4, .box5, .box6
+{
+    background-color: rgb(5, 107, 155);
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    animation: row2 2s linear 0s infinite alternate;
+}
+.box7, .box8, .box9
+{
+    background-color: rgb(5, 107, 155);
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    animation: row3 3s ease 1s infinite;
+}
+.box10, .box11, .box12
+{
+    background-color: rgb(5, 107, 155);
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+a
+{
+    font-size: 1.3rem;
+    color: black;
+}
+
+@keyframes row1 {
+    0%{
+        transform: skewX(30deg);
+    }
+    100%{
+        transform: skewX(-30deg);
+    }
+}
+@keyframes row2 {
+    0%{
+        transform: skewX(30deg);
+    }
+    100%{
+        transform: skewX(-30deg);
+    }
+}
+@keyframes row3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box10
+{
+    animation: row41 4s  0s infinite ;
+}
+@keyframes row41 {
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1, 0.5);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+.box11
+{
+    animation: row42 4s 0s infinite ;
+}
+@keyframes row42 {
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(0.5, 1);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+.box12
+{
+    animation: row43 4s 0s infinite ;
+}
+@keyframes row43 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(100deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
